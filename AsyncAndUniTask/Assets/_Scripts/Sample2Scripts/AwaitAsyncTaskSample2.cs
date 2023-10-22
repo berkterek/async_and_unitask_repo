@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Sample1Scripts
+namespace Sample2Scripts
 {
     public class AwaitAsyncTaskSample2 : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Sample1Scripts
+namespace Sample2Scripts
 {
     public class UniTaskSample2 : MonoBehaviour
     {
