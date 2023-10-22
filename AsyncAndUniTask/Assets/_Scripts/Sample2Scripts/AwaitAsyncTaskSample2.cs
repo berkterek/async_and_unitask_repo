@@ -28,11 +28,11 @@ namespace Sample2Scripts
         //     Debug.Log("Start working after 3 seconds");
         // }
         
-        // void OnEnable()
-        // {
-        //     StartRotationAsync();
-        //     Debug.Log("Enable working immediately");
-        // }
+        void OnEnable()
+        {
+            StartRotationAsync();
+            Debug.Log("Enable working immediately");
+        }
 
         private async Task StartRotationAsync()
         {

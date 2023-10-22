@@ -49,7 +49,7 @@ namespace Sample4Scripts
                 float deltaTime = Time.deltaTime;
                 _currentTime += deltaTime;
                 _transform.Rotate(_speed * deltaTime * Vector3.up);
-                await Task.Delay(100, _cancellationToken);
+                await Task.Delay(10, _cancellationToken);
             }
 
             _currentTime = 0f;

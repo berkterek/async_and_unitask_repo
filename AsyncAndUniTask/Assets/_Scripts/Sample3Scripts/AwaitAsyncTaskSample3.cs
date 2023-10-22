@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Sample1Scripts;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ namespace Sample3Scripts
             {
                 _samples[i].StartRotation();
                 await Task.Delay(2000);
-                //await Task.Delay(TimeSpan.FromSeconds(2));
+                await Task.Delay(TimeSpan.FromSeconds(2));
             }
         }
         

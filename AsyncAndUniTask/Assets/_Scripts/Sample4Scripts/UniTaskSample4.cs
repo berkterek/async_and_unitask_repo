@@ -23,7 +23,7 @@ namespace Sample4Scripts
         {
             _tokenSource = new CancellationTokenSource();
             _cancellationToken = _tokenSource.Token;
-            // await StartRotationAsync1();
+            //await StartRotationAsync1();
             await StartRotationAsync2();
         }
 
@@ -49,7 +49,7 @@ namespace Sample4Scripts
                 float deltaTime = Time.deltaTime;
                 _currentTime += deltaTime;
                 _transform.Rotate(_speed * deltaTime * Vector3.up);
-                await UniTask.Delay(100,false,PlayerLoopTiming.Update, _cancellationToken);
+                await UniTask.Delay(10,false,PlayerLoopTiming.Update, _cancellationToken);
             }
 
             _currentTime = 0f;

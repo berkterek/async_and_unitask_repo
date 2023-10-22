@@ -1,4 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using System;
+using Cysharp.Threading.Tasks;
 using Sample1Scripts;
 using UnityEngine;
 
@@ -14,8 +15,8 @@ namespace Sample3Scripts
             for (int i = 0; i < _samples.Length; i++)
             {
                 _samples[i].StartRotation();
-                await UniTask.Delay(2000, false, PlayerLoopTiming.Update);
-                //await UniTask.Delay(TimeSpan.FromSeconds(2), false, PlayerLoopTiming.Update);
+                //await UniTask.Delay(2000, false, PlayerLoopTiming.Update);
+                await UniTask.Delay(TimeSpan.FromSeconds(2), false, PlayerLoopTiming.Update);
             }
         }
         
