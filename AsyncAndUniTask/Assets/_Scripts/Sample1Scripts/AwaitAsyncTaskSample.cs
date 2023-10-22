@@ -34,5 +34,20 @@ namespace Sample1Scripts
 
             _currentTime = 0f;
         }
+        
+        public async Task<bool> StartRotationAndReturnBool()
+        {
+            while (_currentTime < _maxTime)
+            {
+                float deltaTime = Time.deltaTime;
+                _currentTime += deltaTime;
+                _transform.Rotate(_speed * deltaTime * Vector3.up);
+                await Task.Yield();
+            } 
+            
+            _currentTime = 0f;
+
+            return true;
+        }
     }
 }
